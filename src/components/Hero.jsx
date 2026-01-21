@@ -1,25 +1,26 @@
 import heroImage from '../assets/hero.jpg'
+
 const Hero = () => {
   return (
     <section id="home" className="pt-16 min-h-screen flex items-center relative overflow-hidden">
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat brightness-75"
         style={{
           backgroundImage: `url(${heroImage})`,
+          filter: 'brightness(0.6) contrast(1.1)',
         }}
       ></div>
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-900/70 via-purple-900/60 to-blue-900/70"></div>
       <div className="absolute top-20 left-10 w-20 h-20 bg-blue-200 rounded-full opacity-20 animate-float"></div>
       <div className="absolute top-40 right-20 w-16 h-16 bg-purple-200 rounded-full opacity-20 animate-float" style={{animationDelay: '1s'}}></div>
       <div className="absolute bottom-20 left-1/4 w-12 h-12 bg-blue-300 rounded-full opacity-30 animate-float" style={{animationDelay: '2s'}}></div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20 relative z-10">
         <div className="text-center animate-fadeInUp">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-6 drop-shadow-lg">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-6" >
             Compassionate Care at
             <span className="block mt-2 sm:mt-3 text-blue-200">AyaConnect</span>
           </h1>
-          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-100 mb-6 sm:mb-8 max-w-3xl mx-auto leading-relaxed px-2 drop-shadow-md">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white mb-6 sm:mb-8 max-w-3xl mx-auto leading-relaxed px-2" style={{textShadow: '0 2px 8px rgba(0,0,0,0.9)'}}>
             Providing professional nursing, elder care, and comprehensive health services 
             with dedication, compassion, and excellence.
           </p>
