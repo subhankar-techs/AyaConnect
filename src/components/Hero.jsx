@@ -1,10 +1,11 @@
+import heroImage from '../assets/hero.jpg'
 const Hero = () => {
   return (
     <section id="home" className="pt-16 min-h-screen flex items-center relative overflow-hidden">
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: 'url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmXwWvH8XCaca5hS-YOhpPnrbeirWSe75YrA&s)',
+          backgroundImage: `url(${heroImage})`,
         }}
       ></div>
       <div className="absolute inset-0 bg-gradient-to-br from-blue-900/70 via-purple-900/60 to-blue-900/70"></div>
